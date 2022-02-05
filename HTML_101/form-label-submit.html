@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <!--Using action and method to carry over input values to a different webpage-->
+        <form action="table_quiz.html" method="get">
+            <h2>Enter Text Input</h2>
+            <input type="text"     name="User-input"  placeholder="example text">
+            <input type="submit"    name="button"     value="Submit">
+        </form>
+
+        <!--Using a label with for parameter-->  
+        <form action="table_quiz.html" method="get">
+            <h2>Same form as above but with label</h2>
+            <label for="userinput">Enter Input:</label> 
+            <input id="userinput" type="text" name="input" placeholder="example text">
+            <input type="submit" name="submit-button" value="submit">
+        </form>
+
+        <!--Defining a required/mandatory field-->  
+        <form action="table_quiz.html" method="get">
+            <h2>Form with required input</h2>
+            <label for="requiredinput">Required field Input:</label> 
+            <input id="requiredinput" type="text" name="required-input" placeholder="required field" required>
+            <input type="submit" name="required-button" value="submit">
+        </form>
+
+    </body>
+</html>

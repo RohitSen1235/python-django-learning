@@ -1,0 +1,58 @@
+h1{
+    font-family: 'Comforter', cursive;
+    text-align: center;
+}
+.spectrum{
+    
+    width: 90%;
+    height: 350px;
+    
+    margin:auto;
+    
+}
+td{
+    border : 6px solid white;
+    /* border: white; */;
+    border-radius: 30px;
+}
+
+#col1{
+    background-color: #F94144; 
+}
+
+#col2{
+    background-color: #F3722C;
+    
+}
+
+#col3{
+    background-color: #F8961E;
+}
+
+#col4{
+    background-color: #F9844A;
+}
+
+#col5{
+    background-color: #F9C74F;
+}
+
+#col6{
+    background-color: #90BE6D;
+}
+
+#col7{
+    background-color: #43AA8B;
+}
+
+#col8{
+    background-color: #4D908E;
+}
+
+#col9{
+    background-color: #577590;
+}
+
+#col10{
+    background-color: #277DA1;
+}

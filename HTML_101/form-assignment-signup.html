@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Assignment for Forms</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h2>Mock Sign-Up Page</h2>
+        <p><strong>Please Note : </strong>First Name, Last Name, Password and E-mail are <strong>required</strong></p>
+
+        <form action="thankyou.html" method="get">
+            <p>
+                <label for="firstname">First Name : </label>
+                <input id="firstname" type ="text" name="first-name" value="" placeholder="John" required>
+
+                <label for="lastname">Last Name : </label>
+                <input id="lastname" type ="text" name="last-name" value="" placeholder="Doe" required>
+            </p>
+            <p>
+                <label for="Email">E-mail : </label>
+                <input id="Email" type="email" name="e-mail" value="" placeholder="johndoe@example.com" required>
+                
+                <label for="password">Password : </label>
+                <input id="password" type="password" name="pass-word" value="" required>
+            </p>
+
+            <p>Are you over the age of 18?</p>
+            <label for="yes">Yes : </label>
+            <input id="yes" type="radio" name="over-18" value="Yes">
+            <label for="no">No : </label>
+            <input id="no" type="radio" name="over-18" value="No">
+
+            <p>Choose your payment method </p>
+            <select id="paymentoption" name="payment-method" required>
+                <option value="CreditCard">Credit Card</option>
+                <option value="Paypal">Paypal</option>
+            </select>
+            <p>
+            <input type="submit" value="Sign-Up">
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+/* order of presidence */
+li{
+    /* general tag */
+    color:red;
+}
+
+.topitems{
+
+    /* class */
+    color:blue;
+}
+
+#two{
+    
+    /* id */
+    border :2px solid black;
+}

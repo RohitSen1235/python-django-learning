@@ -1,0 +1,27 @@
+h1{
+    font-family:"Arial";
+    text-align: center;
+}
+
+p{
+    /* font-family: monospace; */
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+/* by default 1em =16 px */
+/* its good practice to set a font size in the body element */
+
+body{
+    font-size: 20px;
+}
+
+#two{
+    font-size: 1.5em;
+}
+
+p{
+    font-style:normal;
+    font-weight:normal;
+    text-align:justify;
+}

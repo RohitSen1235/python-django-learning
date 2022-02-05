@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form-Selections</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    
+    <body>
+        <h1>Hotel Feedback Form</h1>
+        <form method="get">
+
+            <h3>Are you from inside the USA? or Outside the USA?</h3>
+
+            <label for="in-usa">Inside : </label>
+            <input id="in-usa" type="radio" name="location" value="inside" required>    
+            <label for="out-usa">Outside : </label>
+            <input id="out-usa" type="radio" name="location" value="outside" required>
+            
+            <!--Radio buttons can be linked together if you give them the same name-->
+
+            <h3>How was the service</h3>
+            <!--this is how you create a drop down menu-->
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+
+                <option value="Great">3</option>
+                <option value="ok">2</option>
+                <option value="poor">1</option>
+
+            </select>
+            
+            <h3>Got any other feedback ?</h3>
+            <textarea name="feedback" rows="5" cols=50  required></textarea>
+
+            <br>
+            
+            <input type="submit" name="" value="SUBMIT">
+
+        </form>
+    </body>
+</html>
