@@ -1,6 +1,6 @@
 .jumbotron{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     /* right side padding seems to be a little off so added 2% extra for compensation */
     padding: 2% 2% 2% 2%; 
     border-radius: 20px;
@@ -15,4 +15,5 @@
     border: 2px solid black;
     font-size:4em;
     text-align:center;
+    color: blue;
 }
