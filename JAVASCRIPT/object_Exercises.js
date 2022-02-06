@@ -11,6 +11,14 @@ var employee = {
     age: 31,
     NameLength: function(){
       console.log(this.name.length);
+    },
+    summaryReport:function(){
+      var report ="Name is "+this.name+", Job is "+this.job+", Age is "+this.age;
+      console.log(report);
+    },
+    LastName:function(){
+      var splitName=this.name.split(" ");
+      console.log(splitName[splitName.length-1]);
     }
   }
   
@@ -37,7 +45,7 @@ function nameLength(){
   
   // Name is John Smith, Job is Programmer, Age is 31.
  
-  function popAlert(){
+  function Summary(){
     console.log("Name is "+employee["name"]+", Job is "+employee["job"]+", Age is "+employee["age"]);
   }
 
@@ -67,13 +75,17 @@ if( start === 'y'){
   while(action != 4){
     var action = prompt("What action to perform?\n1.Print Name Length\n2.Employee Summary\n3.Last Name\n4.Quit!\n Select Any One")
     if(action == 1){
-      nameLength();
+      employee.NameLength();
+      // nameLength();
     }
     else if(action == 2){
-      popAlert();
+      employee.summaryReport();
+      // Summary();
+
     }
     else if(action == 3){
-      lastName();
+      employee.LastName();
+      // lastName();
     }
     else{
       alert("Please reload the application to start over!")
