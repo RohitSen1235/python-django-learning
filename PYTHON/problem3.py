@@ -18,8 +18,12 @@
 def end_other(a, b):
   a.lower()
   b.lower()
-  if(a in b or b in a):
+  if(a.endswith(b) or b.endswith(a)):
       return True
+
+  # if(a[-len(b):]==b or b[-len(a):]==a):
+      # return True
+
   return False  
 
-print(end_other('abc', 'abXab'))
+print(end_other('abc', 'abcab'))
